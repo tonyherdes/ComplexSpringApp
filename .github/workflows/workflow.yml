@@ -11,13 +11,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-  job2:
-    runs-on: ubuntu-latest
-    needs: job1
-    steps:
       - name: display_jdk_version
         run: java --version
       - name: display_mvn_version
         run: mvn --version
-      - name: print_current_directory_contents
-        run: ls
+      - name: print_current_directory
+        run: echo "${{github.workspace}}"
