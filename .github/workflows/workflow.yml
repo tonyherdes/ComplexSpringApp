@@ -19,5 +19,5 @@ jobs:
         run: java --version
       - name: display_mvn_version
         run: mvn --version
-      - name: run_code
-        run: mvn spring-boot:run
+      - name: print_current_directory_contents
+        run: ls
