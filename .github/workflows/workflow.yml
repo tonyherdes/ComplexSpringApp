@@ -17,3 +17,5 @@ jobs:
         run: mvn --version
       - name: print_current_directory
         run: echo "${{github.workspace}}"
+      - name: print_folder_contents
+        run: ls
