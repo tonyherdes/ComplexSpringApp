@@ -19,3 +19,5 @@ jobs:
         run: echo "${{github.workspace}}"
       - name: print_folder_contents
         run: ls
+      - name: run_code
+        run: mvn spring-boot:run
